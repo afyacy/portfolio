@@ -92,7 +92,7 @@
 		  <div class="col-sm-4 mb-3 mb-md-0">
 		    <div class="card">
 		    	<!-- Card image -->
-  				<img class="card-img-top" src="images/frontend-cover.jpg" alt="Card image cap">
+  				<img class="card-img-top" src="images/frontend-cover.jpg" height="320px" alt="Card image cap">
 
 		      <div class="card-body">
 		        <h5 class="card-title">Front-end Development</h5>
@@ -123,7 +123,6 @@
 				      </div>
 				      <div class="modal-footer">
 				        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary btn-sm">Save changes</button>
 				      </div>
 				    </div>
 				  </div>
@@ -139,7 +138,37 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Print Works Designs</h5>
 		        <p class="card-text">Use of appropriate tech tools to create the graphical representation of your idea...</p>
-		        <a href="#!" class="btn btn-primary">View Works</a>
+		              <!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModal2">
+							View Works
+						</button>
+								<!-- Central Modal Large -->
+						<div class="modal fade" id="centralModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+							aria-hidden="true">
+
+							<!-- Change class .modal-lg to change the size of the modal -->
+							<div class="modal-dialog modal-fluid modal-notify modal-success " role="document">
+
+
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title w-100 white-text" id="myModalLabel">Front End Works</h4>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+											<h3>1. </h3>
+											<p>Banner</p>
+											<img src="images/l1.jpg" alt="Banner" height="80%" width="80%">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Central Modal Small -->
 		      </div>
 		    </div>
 		  </div>
@@ -150,8 +179,40 @@
 		      <div class="card-body">
 		        <h5 class="card-title">Responsiveness and Reliability</h5>
 		        <p class="card-text">Here, you experience getting things done as it is supposed to without stress...</p>
-		        <a href="#!" class="btn btn-primary">View Works</a>
-		      </div>
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#centralModal3">
+							View Works
+						</button>
+								<!-- Central Modal Large -->
+						<div class="modal fade" id="centralModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+							aria-hidden="true">
+
+							<!-- Change class .modal-lg to change the size of the modal -->
+							<div class="modal-dialog modal-fluid modal-notify modal-success " role="document">
+
+
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title w-100 white-text" id="myModalLabel">Front End Works</h4>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+											<h3>1. 
+												<span><a href="http://geniustales.herokuapp.com/" target="_blank">Geniustales</a> </span>
+											</h3>
+											<h3>1. 
+													<span><a href="https://afyacy.github.io/afyacy/" target="_blank">Github</a> </span>
+											</h3>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Central Modal Small -->		      </div>
 		    </div>
 		  </div>
 		</div>
@@ -191,8 +252,14 @@
 		        <div class="mask rgba-black-strong"></div>
 		      </div>
 		      <div class="carousel-caption">
-		        <h3 class="h3-responsive">Strong mask</h3>
-		        <p>Secondary text</p>
+		        <h3 class="h3-responsive">Color! We love it, but probably not as much as our Alex Clem, 
+							who researched, curated, and created a package of 101 color combinations for anyone to 
+							use. Use them to learn about color theory, use them to get inspired, or just use them — 
+							there’s a free swatch file included.
+
+							If you’re into color, we have even more resources for you. We’ve written about color psychology, color meaning, pairing color and type, how to design with black, plus this huge primer on using color in your designs. It’s also by our in-house color expert, Alex Clem, and it’s a great place to start if you’re new to design. You might also like our latest color trends report,
+							 which highlights the top colors you’ll see in 2019</h3>
+		        <p>- Eleanor Innis</p>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
@@ -203,8 +270,15 @@
 		        <div class="mask rgba-black-slight"></div>
 		      </div>
 		      <div class="carousel-caption">
-		        <h3 class="h3-responsive">Slight mask</h3>
-		        <p>Third text</p>
+		        <h3 class="h3-responsive">Top highlight: “The shift to mobile has created two 
+							complementary new trends in interface design. One is the move toward more physical 
+							gestures. Because you’re touching the software with your fingers instead of manipulating
+							 it with a mouse or a keyboard, it feels immediately much more human. Even children get 
+							 this: Just watch this video of a baby trying to tap and zoom with magazine pages 
+							 because they want it to work just like an iPad. Swiping, pinching, zooming, tapping:
+							  All of these types of 
+							direct manipulation simulate natural human body gestures.”</h3>
+		        <p>- Lauren Holliday</p>
 		      </div>
 		    </div>
 		  </div>
@@ -291,9 +365,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
@@ -305,9 +377,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
@@ -319,9 +389,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
@@ -333,9 +401,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
@@ -347,9 +413,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
@@ -361,9 +425,7 @@
 	        <!--Image-->
 	        <div class="view overlay z-depth-1-half">
 	          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid" alt="">
-	          <a href="">
 	            <div class="mask rgba-white-light"></div>
-	          </a>
 	        </div>
 
 	      </div>
