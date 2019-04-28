@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+  margin-bottom: 0px !important;
+}
+nav.mb-1.navbar.navbar-expand-lg.navbar-dark.info-color{
+  margin-bottom: 0px !important;
+}
+#works{
+  background: white;
+  padding: 20px;
+}
+#workstitle{
+  font-weight: 300 !important;
+  text-align: center !important;
+
+}
+#welcome{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 22px;
+  margin: 0px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.header-nav a{
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 22px 0 22px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+#search-form {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 0px 10px 10px;
+  margin: 12px 20px 0px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #1865B0;
+  border-radius: 20px;
+}
+#search-input, #submit-button{
+  border: none;
+  border-radius: 10px;
+}
+#search-input{
+	background-color: #EDF0ED;
+	height: 20px;
+}
+#submit-button{
+	background-color: #1865B0;
+	font-weight: bold;
+	color: #ffffff;
+	height: 32px;
+	border-radius: 8px;
+}
+#submit-button:hover{
+	color:#A4BED7;
+}
+.header-nav a:hover {
+  background-color: #1865B0;
+  padding-bottom: 34px;
+}
+
+.header-nav a.active {
+  background-color: #1865B0;
+  color: white;
+  padding-bottom: 34px;
+}
+
+.header-nav .topside{
+  float: right;
+}
+
+.header-nav input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+}
+
+.header-nav .topside button {
+  float: right;
+  padding: 6px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav .topside button:hover {
+  background: #ccc;
+}

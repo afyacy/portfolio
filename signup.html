@@ -1,0 +1,183 @@
+<!-- Code for module quiz 3-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Module quiz 3</title>
+    <!--Begin Styles-->
+    <style type="text/css">
+   	 .signupBox{
+     		 width: 500px;
+     		 height: 450px;
+     		 margin-left: 30%;
+         margin-top: 10%;
+     		 font-family: Arial;
+     		 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   	 }
+   	 #form-title{
+   		 height: 50px;
+   		 padding-top: 23px;
+   		 text-align: center;
+   		 margin-bottom: 25px;
+   		 color: #ffffff;
+   		 font-size: 25px;
+   		 background-color: #2079bb;
+   	 }
+   	 #row-1, #row-2, #row-3, #row-4, #row-5{
+   		 margin-bottom: 20px;
+   	 }
+   	 #row-1, #row-2, #row-4{
+   		 display: -ms-flexbox; /* IE10 */
+     		 display: flex;
+     		 -ms-flex-wrap: wrap; /* IE10 */
+     		 flex-wrap: wrap;
+   	 }
+   	 #row-3, #row-5{
+   		 margin-left: 10px;
+   	 }
+   	 #row-2 > #col-2{
+   		 margin-top: 15px;
+   	 }
+   	 #col-1{
+   		 width: 50%;
+   		 padding-left: 10px;
+   	 }
+   	 #gender{
+   		 margin-top: 15px;
+   	 }
+   	 #col-2{
+   		 -ms-flex: 25%; /* IE10 */
+   	 	flex: 25%;   		 
+   	 	width: 50%;
+   	 }
+   	 #s_width1{
+   		 width: 94%;
+   	 }
+   	 #s_width2{
+   		 width: 97%;
+   	 }
+   	 #gender-female{
+   		 margin-left: 66px;
+   	 }
+   	 #f-label{
+   		 color: #9b9ba6;
+   		 font-size: 15px;
+   	 }
+   	 input[type=text],input[type=number], input[type=email], input[type=password]{
+   		 border: none;
+   		 border-bottom: 1px solid #899095;
+   		 background: transparent;
+   	 }
+
+   	 input[type=number]::-webkit-inner-spin-button,
+   	 input[type=number]::-webkit-outer-spin-button {
+   	   -webkit-appearance: none;
+     	   margin: 0;
+   	 }
+   	 input[type="number"] {
+   		 -moz-appearance: textfield;
+   	 }
+   	 ::placeholder {
+   		 color: #1c1d1e;
+   		 opacity: 1; /* Firefox */
+   	 }
+   	 :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  			 color: #1c1d1e;
+   	 }
+   	 ::-ms-input-placeholder { /* Microsoft Edge */
+  			 color: #1c1d1e;
+   	 }
+   	 #b_submit{
+   		 width: 98%;
+   		 height: 35px;
+   		 margin-top: 30px;
+   		 background-color: #2079bb;
+   		 color: #ffffff;
+     		 border: none;
+     		 border-radius: 8px;
+     		 cursor: pointer;
+     		 font-size: 17px;
+   	 }
+   	 #b_submit:hover {
+   		 background-color: #0d5285;
+   		 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   	 }
+    </style>
+    <!--End styles-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+  <!-- Start Head section of the website-->
+<header>
+  <div class="header-nav">
+    <h1 id="welcome">WELCOME</h1>
+    <div class="topside">
+      <a class="active" href="index.html">Home</a>
+        <a href="chat.html">Let's Chat</a>
+        <a href="signup.html">Sign up</a>
+      <form method="POST" action="#" id="search-form"> <!-- Action after submitting the form not ready -->
+        <input type="text" name="search" id="search-input">
+            <button type="submit" id="submit-button">Search</button>
+      </form>
+    </div>
+  </div>
+</header>
+<!-- End head section -->
+    <!--Begin main sign up container-->
+    <div class="signupBox">
+   	 <h1 id="form-title">Cazhum Sign-up Form</h1>
+   	 <!--Begin form section-->
+   	 <form action="email.php" method="POST"><!--email.php not ready-->
+   		 <!--Begin row 1-->
+   		 <div id="row-1">
+   			 <div id="col-1">
+   				 <label id="f-label">First name</label>
+   				 <input type="text" name="firstname" placeholder="Your First Name" id="s_width1">
+   			 </div>
+   			 <div id="col-2">
+   				 <label id="f-label">Last name</label>
+   				 <input type="text" name="lastname" placeholder="Your Last Name" id="s_width1">
+   			 </div>
+   		 </div>
+   		 <!--End of row 1-->
+
+   		 <!--Begin row 2-->
+   		 <div id="row-2">
+   			 <div id="col-1">
+   				 <div id="gender"><!--For Gender-->
+   					 <label>Gender: </label>
+   					 <input type="radio" name="gender" value="male" id="gender-male"> Male<br>
+     					 <input type="radio" name="gender" value="female" id="gender-female"> Female<br>
+   				 </div><!--End gender section-->
+   			 </div>
+   			 <div id="col-2">
+   				 <label id="f-label">Age</label>
+   				 <input type="number" name="lastname" placeholder="20" id="s_width1">
+   			 </div>
+   		 </div>
+   		 <!--End of row 2-->
+   		 <div id="row-3">
+   			 <label id="f-label">Email</label>
+   			 <input type="email" name="email" placeholder="someone@example.com" id="s_width2">
+   		 </div>
+   		 <!--Begin row 4-->
+   		 <div id="row-4">
+   			 <div id="col-1">
+   				 <label id="f-label">Password</label>
+   				 <input type="password" name="i-password" placeholder="********" id="s_width2">
+   			 </div>
+   			 <div id="col-2">
+   				 <label id="f-label">Confirm Password</label>
+   				 <input type="password" name="c-password" placeholder="********" id="s_width2">
+   			 </div>
+   		 </div>
+   		 <!--End of row -->
+   		 <div id="row-5">
+   			 <input type="submit" name="submit" value="DONE. GOOD TO GO!" id="b_submit">
+   		 </div>   		 
+   	 </form>
+   	 <!--End form section-->    
+    </div>
+    <!--End main sign up container-->
+</body>
+</html>

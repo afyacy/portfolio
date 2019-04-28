@@ -1,0 +1,89 @@
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+html, body {
+  height: 100vh;
+  margin: 0;
+}
+
+.wave-scenario {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 5px 5px;
+  background: linear-gradient(rgb(150,150,150), rgb(255,255,255));
+  position: relative;
+  overflow: hidden;
+  z-index:1;
+  }
+.wave-scenario, #container-fluid{
+  position: relative;
+}
+.imperfect-circle{
+  height: 150vw;
+  width: 150vw;
+  bottom: 100px;
+  position:absolute;
+  border-radius: 49% 46%;
+  left: -25vw;
+  opacity: .65;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.imperfect-circle:nth-child(1){
+  animation: turn 4000ms infinite linear;
+  background: #33B5E5;
+  opacity: .13;
+}
+
+.imperfect-circle:nth-child(2){
+  animation: turn 5000ms infinite linear;
+  background: #33B5E5;
+  
+}
+.imperfect-circle:nth-child(3){
+  animation: turn 6000ms infinite linear;
+  background: #33B5E5;
+}
+
+.title{
+    /*text-transform: uppercase;*/
+    color: rgb(255,255,255);
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    bottom: 40%;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    width: 100vw;
+}
+.title h1{
+  font-size: 60px !important;
+  font-weight: 500 !important;
+
+}
+@keyframes turn {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+#home{
+  margin-bottom: 80px;
+}
+#interest{
+  margin-top: 5px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  font-weight: normal;
+}
+#for-marginLeft{
+  width: 40%;
+  margin-left: 25%;
+}
+#skills-section{
+  background-color:  rgb(67,141,241);
+  color: #ffffff;
+  margin:0;
+  padding: 5px;
+}
+#home a{
+  color:  rgb(67,141,241);
+}
